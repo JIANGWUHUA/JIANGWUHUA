@@ -1,16 +1,14 @@
 <template>
   <div>
-    <!-- 主页 -->
-    <my-index></my-index>
-    <!-- 购物车 -->
-    <my-wishlist></my-wishlist>
+    <sss />
   </div>
 </template>
 
 <script>
 import MyIndex from './components/MyIndex.vue'
+import Sss from './components/sss.vue'
   export default {
-  components: { MyIndex,},
+  components: { MyIndex, Sss,},
     
   }
 </script>
