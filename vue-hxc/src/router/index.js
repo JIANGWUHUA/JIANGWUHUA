@@ -6,6 +6,16 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/order_invoice',
+    name: 'order_invoice',
+    component: () => import('../views/OrderInvoice.vue'),
+  },
+  {
+    path: '/order_history',
+    name: 'order_history',
+    component: () => import('../views/OrderHistory.vue'),
+  },
+  {
     path: '/product/display',
     name: 'productDisplay',
     component: () => import('../views/ProductDisplay.vue'),
