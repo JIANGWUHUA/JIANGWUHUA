@@ -50,7 +50,7 @@ ul{ list-style: none;}
     border-left: 1px solid rgba(102, 102, 102,.2);
 }
 .gjm .top .class li{
-    padding: 2px 20px;
+    padding: 2px 0 0 20px;
     letter-spacing: 10px
 }
 .gjm .top .class li:hover{
@@ -59,6 +59,7 @@ ul{ list-style: none;}
 }
 .gjm .top .class li a{
   display: inline-block;
+  line-height: 16px;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -120,6 +121,18 @@ ul{ list-style: none;}
     top: 10px;
     left: 10px;
 }
+.card-top-right{
+  width: 40px;
+  height: 30px;
+  color: rgba(102, 102, 102, 0.5);
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
 .card-body{
     line-height: 30px;
     text-align:  center;
@@ -129,6 +142,7 @@ ul{ list-style: none;}
     color: rgb(77,77,80);
 }
 .card-body p{
+    padding-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -161,6 +175,36 @@ ul{ list-style: none;}
     color: #FFF;
     background-color: rgb(17, 151, 68);
     transition: 1s;
+}
+.card-body .btn{
+  padding-bottom: 8px;
+}
+.card-body .btn>div{
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-body input{
+  padding: 8px 5px;
+  height: 38px;
+  width: 50%;
+  outline: none;
+  border: 0 solid;
+  border-radius: 6px;
+  color: #FFF;
+  text-align: center;
+  background-color: rgb(17, 151, 68);
+}
+.card-body .btn span{
+  margin: 5px;
+  width: 34px;
+  line-height: 34px;
+  display: inline-block;
+  background-color: #F5F5F5;
+  border-radius: 6PX;
+  border: 1px solid rgba(102, 102, 102, 0.2);
+  font-size: 20px;
 }
 .load{
     text-align: center;
@@ -208,7 +252,6 @@ ul{ list-style: none;}
     width: 49%;
     position: relative;
 }
-
 .details-left div{
     border-radius: 6px;
     overflow: hidden;
@@ -217,11 +260,9 @@ ul{ list-style: none;}
     display: flex;
     justify-content: space-between;
   }
-  .details-s-img div{
-    margin: 8px 0 0 ;
-    width: 19%;
-  }
   .details-s-img img{
+    width: 19%;
+    margin: 8px 0 0 ;
     border: 1px solid transparent;
     border-radius: 6px;
   }
@@ -252,18 +293,53 @@ ul{ list-style: none;}
     border-radius: 6px;
     color: rgb(57, 64, 74);
   }
+  .details-card h2:first-child{
+    display: block;
+    margin-bottom: 10px;
+  }
   .xing{
+    display: inline-block;
+    padding: 0 0 0 20px;
     color: rgb(255, 171, 16);
     letter-spacing: 0.3em;
     font-size: 24px;
   }
   .details-card li{
-    padding: 0 0 20px;
+    padding: 0 0 5px;
     font-size: 20px;
   }
   .details-card del{
     color: rgb(225,56,56);
     font-weight: bold;
+  }
+  .bj{
+    display: inline-flex;
+  }
+  .bj div:first-child{
+    width: 70px;
+  }
+  .bj div:first-child span{
+    word-wrap: break-word;
+  }
+  .size{
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .size span{
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 10px 0 0 20px;
+    border: 1px solid rgba(102, 102, 102,.2);
+    border-radius: 3px;
+    background-color: #FFF;
+  }
+  .size span.cur{
+    border-color: rgb(17, 151, 68);
+    background-color: rgb(17, 151, 68);
+    color: #fff;
+  }
+  .size span:hover{
+    border-color: rgb(17, 151, 68);
   }
   .details-piece span{
     font-size: 26px;
@@ -271,7 +347,7 @@ ul{ list-style: none;}
     color: rgb(17, 151, 68);
   }
   .details-serve{
-    padding: 5px 0;
+    padding: 0 0 5px;
   }
   .details-serve a{
     color: rgb(57, 64, 74);
@@ -299,17 +375,17 @@ ul{ list-style: none;}
   }
   .details-btn{
     text-align: center;
-    padding: 0 0 15px;
+    padding: 0 0 20px;
   }
   .details-btn button{
-    margin: 8px 0;
-    padding: 10px 5px;
+    margin: 15px 0;
+    padding: 13px 5px;
     font-size: 15px;
     cursor: pointer;
     border: 1px solid rgba(102, 102, 102,.2);
     border-radius: 6px;
   }
-  .btn1 button:hover,.btn2 button:hover{
+  .btn1 button:hover{
     color: #FFF;
     background-color: rgb(17, 151, 68);
     transition: 1s;
@@ -323,6 +399,9 @@ ul{ list-style: none;}
   }
   .btn1 .g{
     color: rgba(102, 102, 102, 0.5);
+  }
+  .love{
+    color: rgb(216, 79, 58) !important;
   }
   .btn1 button:first-child{
     width: 60%;
@@ -342,7 +421,7 @@ ul{ list-style: none;}
   }
   .btn1 input{
     padding: 10px 5px;
-    height: 40px;
+    height: 44px;
     width: 60%;
     outline: none;
     border: 0 solid;
@@ -353,22 +432,21 @@ ul{ list-style: none;}
   }
   .btn1 div span{
     margin: 5px;
-    width: 30px;
+    width: 34px;
     display: inline-block;
     background-color: #F5F5F5;
     border-radius: 6PX;
     border: 1px solid rgba(102, 102, 102, 0.2);
-    font-size: 22px;
+    font-size: 24px;
   }
   .btn1 button:last-child{
     width: 30%;
     display: inline-block;
   }
-  .btn1 .active{
-    display: none;
-  }
   .btn2 button{
     width: 80%;
+    color: #FFF;
+    background-color: rgb(17, 151, 68);
   }
   /* 底部 */
 
@@ -390,7 +468,7 @@ ul{ list-style: none;}
     margin: 0 auto;
   }
   .active{
-    display: none;
+    display: none !important;
   }
   .details div{
     padding: 0 20px;
