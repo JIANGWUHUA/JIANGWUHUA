@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*第一板块开始*/
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_huo1 div h3 {
+  line-height: 60px;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+
+.nav_huo1 {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgb(17, 151, 68);
+}
+.banxin {
+  width: 1100px;
+  margin: auto;
+}
+.nav_huo1 > div {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_huo1 ul li {
+  float: left;
+  margin-left: 36px;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+/*第一板块结束*/
+/*第二板块开始*/
+.nav_huo2 {
+  width: 100%;
+  height: 160px;
+  line-height: 80px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.nav_huo2 .nav_huo2_1 .logo {
+  width: 200px;
+  height: 80px;
+  float: left;
+  margin-left: 50px;
+}
+.nav_huo2 .nav_huo2_1 input {
+  border: 0;
+  outline: none;
+  background-color: rgb(245, 245, 245);
+  border-radius: 3px 0 0 3px;
+  width: 330px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  margin-left: 180px;
+  padding: 0 10px;
+  float: left;
+  margin-top: 22px;
+}
+.nav_huo2 .nav_huo2_1 button {
+  width: 70px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  background-color: rgb(245, 245, 245);
+  border-radius: 0 3px 3px 0;
+  float: left;
+  margin-top: 22px;
+  margin-right: 495px;
+}
+.nav_huo2 .nav_huo2_1 button:hover{
+  border: 2px solid rgb(17, 151, 68);
+}
+.nav_huo2 .nav_huo2_1 input:hover{
+  border: 2px solid rgb(17, 151, 68);
+}
+
+.nav_huo2 .nav_huo2_1 ul li{
+  float: left;
+  margin-left: 5px;
+}
+.nav_huo2 .nav_huo2_1 ul li img{
+  vertical-align: middle;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nav_bar{
+  width: 70%;
+  margin: auto;
+}
+.nav_bar .nav_f{
+  list-style:none;
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+.nav_bar .nav_f li{
+  float: left;
+  margin-left: 35px;
+}
+.nav_bar .nav_r{
+  list-style:none;
+  float: right;
+}
+.nav_bar .nav_r li{
+  float: right
+}
+.nav_bar .nav_r li img{
+  border-radius: 50%;
+  vertical-align: middle;
+  height: 40px;
+} 
+.nav_bar .nav_r li p{
+  margin-left: 6px;
+  margin-right: 35px;
+  display: block;
+}
+
+
+/*第二板块结束*/
+/*第三板块 表格 开始 */
+.two_list {
+  margin: auto;
+  height: 1093px;
+  background-color: rgb(245, 245, 245);
+}
+.two_list th {
+  padding: 11px 43px;
+  color: white;
+}
+.two_product {
+  padding: 10px 20px 10px 20px;
+}
+.table_list {
+  margin: auto;
+  height: 688px;
+  width: 1221px;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border-collapse: separate;
+  border-spacing: 3px;
+}
+.table_list img {
+  width: 100px;
+  height: 100px;
+}
+table thead {
+  background-color: green;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+
+/*第三板块 表格 结束 */
+
+
+
+
+/*第六板块开始*/
+.huo_6 {
+  width: 100%;
+  height: 255px;
+  position: relative;
+}
+.huo_6 img {
+  width: 100%;
+  height: 255px;
+}
+.huo_6 h1 {
+  color: #fff;
+  position: absolute;
+  margin-left: 95px;
+  margin-top: -150px;
+  font-size: 36px;
+}
+.huo_6 input {
+  width: 600px;
+  height: 22px;
+  position: absolute;
+  margin-top: -162px;
+  margin-left: 830px;
+  padding: 20px;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+}
+.huo_6 button {
+  width: 225px;
+  height: 42px;
+  position: absolute;
+  margin-top: -152px;
+  margin-left: 1238px;
+  font-size: 13px;
+  color: #fff;
+  background-color: royalblue;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+}
+/*第六板块结束*/
+
+/*第七板块开始*/
+.huo_7{
+  width: 100%;
+  height: 280px;
+  float: left;
+  background-color: #f8fffa;
+}
+/* .huo_7 .huo_7_1{
+    float: left;
+} */
+.huo_7 ul{
+  list-style: none;
+  margin-top: 60px;
+  margin-left: 350px;
+}
+.huo_7  ul li{
+  float: left;
+  width: 20%;
+}
+.huo_7  ul li img{
+  margin-left: 50px;
+}
+.huo_7  ul li h4{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*第七板块结束*/
+/*第八板块开始*/
+.huo_8 {
+  width: 100%;
+  height: 720px;
+  background-color: rgb(255, 255, 255);
+}
+.huo_8 ul {
+  float: left;
+  margin-left: 280px;
+}
+.huo_8 ul li img {
+  width: 255px;
+  margin-top: 45px;
+  margin-bottom: 40px;
+  float: left;
+}
+.huo_8 ul li {
+  width: 20%;
+  height: 510px;
+  float: left;
+}
+.huo_8 ul li p {
+  display: block;
+  margin-left: 10px;
+  margin-top: -20px;
+}
+.huo_8 ul li h1 {
+  display: block;
+  margin-top: 115px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+.huo_8 ul li div {
+  margin-left: 30px;
+}
+
+.huo_8last {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 80px;
+}
+.huo_8last .huo_8last_1{
+  float: left;
+  width: 75%;
+  background-color: rgb(17, 151, 68);
+  border-radius: 8px;
+  margin-left: 200px;
+}
+.huo_8last .huo_8last_2{
+  float: right;
+  height: 80px;
+  margin-right: 50px;
+}
+
+.huo_8last .huo_8last_2 img{
+  margin-top: 22px;
+  border-radius: 5px;
+}
+.huo_8last p {
+  display: block;
+  float: left;
+  margin-top: 33px;
+  margin-left: 50px;
+  color: #fff;
+  font-size: 12px;
+}
