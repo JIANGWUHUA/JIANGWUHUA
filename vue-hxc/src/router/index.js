@@ -54,11 +54,13 @@ const routes = [
     component: () => import('../views/OrderHistory.vue'),
   },
   {
+     // 全部商品
     path: '/product/display',
     name: 'productDisplay',
     component: () => import('../views/ProductDisplay.vue'),
   },
   {
+    //商品详情
     path: '/product/details',
     name: 'productDetails',
     component: () => import('../views/ProductDetails.vue'),

@@ -2,83 +2,17 @@
     <div class="gjm">
       <div class="details-page">
       <div class="center">
-        <div class="top">
-          <div class="details-left">
-            <div class="details-l-img"><img src="../assets/images/product/01.jpg" alt=""></div>
-            <div class="details-s-img">
-              <div class="toggle"><img src="../assets/images/product/01.jpg" alt="" ></div>
-              <div><img src="../assets/images/product/02.jpg" alt="" ></div>
-              <div><img src="../assets/images/product/03.jpg" alt="" ></div>
-              <div><img src="../assets/images/product/04.jpg" alt="" ></div>
-              <div><img src="../assets/images/product/05.jpg" alt="" ></div>
-            </div>
-          </div>
-          <div class="details-right">
-            <div class="details-banner">
-               <a href="#"><div><img src="../assets/images/single-banner.jpg" alt=""><span>秒杀专区</span></div>
-               </a>
-            </div>
-            <div class="details-card">
-              <h1>密刺黄瓜500g+-50g</h1>
-              <div>
-                <ul>
-                  <li><span>评分:</span><span class="xing">★★★★★</span></li>
-                  <li class="details-piece">
-                    <del>￥4.69</del>
-                    <span>￥2.59</span>
-                  </li>
-                  <li>
-                    <span>规格：</span>
-                    <span>500g+-50g</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="details-serve">
-                <p><a href="#">服务保障</a></p>
-                <ul>
-                  <li>限时秒杀</li>
-                  <li>破损无忧</li>
-                  <li>质量保障</li>
-                  <li>正规发票</li>
-                  <li>爱心公益计划</li>
-                  <li>7天价保</li>
-                </ul>
-              </div>
-              <div>
-                <div class="details-serve">
-                  <a href="#"><span>分享</span>
-                  <div class="details-share"><img src="../assets/images/product/share.svg" alt=""></div>
-                  </a>
-                  <ul>
-                    <li><div><img src="../assets/images/product/xinlang.svg" alt=""></div></li>
-                    <li><div><img src="../assets/images/product/weixin.svg" alt=""></div></li>
-                    <li><div><img src="../assets/images/product/email.svg" alt=""></div></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="details-btn">
-                <div class="btn1">
-                  <button>加入购物车</button>
-                  <div class="active"><span>-</span><input type="text" value="1" oninput="value=value.replace(/[^\d]/g,'')"><span>+</span></div>
-                  <button><span class="g">❤</span><span>收藏</span></button>
-                </div>
-                <div class="btn2">
-                  <a href="#"><button>立即购买</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <product-basic />
         <div class="details-bottom">
           <div>      
             <div class="details">
-                <div class="black"><span class="cur">商品详情</span></div>
+                <div class="black" @click="Active='Active1'"><span :class="{cur:Active=='Active1'}">商品详情</span></div>
               <div class="details-div">
-                <div><span>商品评价</span></div>
+                <div @click="Active='Active2'"><span :class="{cur:Active=='Active2'}">商品评价</span></div>
               </div>
             </div>
             <!-- 商品详情 -->
-            <div class="details-show">
+            <div class="details-show"  :class="{active:Active!='Active1'}">
               <div class="details-table">
                 <table>
                   <tr><td>商品编码</td><td>0020001</td></tr>
@@ -96,7 +30,7 @@
               </div>
             </div>
             <!-- 商品评论 -->
-            <div class="details-comment active">
+            <div class="details-comment"  :class="{active:Active!='Active2'}">
               <div>
                 <ul>
                   <li class="comment">
@@ -185,10 +119,16 @@
 </template>
 
 <script>
+import ProductBasic from '@/components/ProductBasic.vue'
     export default {
-        
+  components: { ProductBasic },
+    data() {
+      return {
+        Active: 'Active1',
+      }
+    },
     }
 </script>
 
 <style lang="scss" scoped></style>
-<style scoped src="../assets/css/product.css"></style>
+<style scoped  src="../assets/css/product.css"></style>

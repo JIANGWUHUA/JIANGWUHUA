@@ -10,8 +10,8 @@
                 <h3>蔬菜</h3>
               </div>
               <ul>
-                <li><a href="">西兰花西兰花西兰花</a></li>
-                <li><a href="">茄子</a></li>
+                <li><router-link to="/product/details">西兰花西兰花西兰花</router-link></li>
+                <li><router-link to="/product/details">茄子</router-link></li>
                 <li><a href="">芦笋</a></li>
                 <li><a href="">菜花</a></li>
                 <li><a href="">胡萝卜</a></li>
@@ -69,11 +69,9 @@
         </div>
         <div class="breadcrumb">
             <div>
-                <a href="#">首页</a>
+                <router-link to="/">首页</router-link>
                 <span>></span>
                 <span>全部结果</span>
-            </div>
-            <div class="gjm-product-filter">
             </div>
         </div>
         <div class="display-item">
@@ -83,22 +81,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/01.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -109,22 +117,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/02.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -135,22 +153,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/03.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -161,22 +189,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/04.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -187,22 +225,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/05.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -213,22 +261,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/06.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -239,22 +297,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/07.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -265,22 +333,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/08.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -291,22 +369,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/09.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -317,22 +405,32 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <a href="#"><img src="../assets/images/product/0020001.jpg" alt=""></a>
+                      <router-link to="/product/details"><img src="../assets/images/product/10.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
                         <span>秒杀</span>
                       </div>
+                      <div class="card-top-right">
+                        <span @click="love=!love" :class="{love:love==true}">❤</span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <a href="#" class="card-name">密刺黄瓜500g+-50</a><br>
+                    <router-link to="/product/details" class="card-name">密刺黄瓜500g+-50</router-link><br>
                     <p>
                       <del>￥4.69</del>
                       <span>￥2.59</span>
                     </p>
                     <div>
-                      <a href="#"><button>加入购物车</button></a>
+                      <div class="btn">
+                        <button @click="v++"  :class="{active:v!=0}">加入购物车</button>
+                        <div :class="{active:v==0}">
+                          <span class="minus"  @click="v--">-</span>
+                          <input type="text" v-model="v" oninput="value=value.replace(/[^\d]/g,'')">
+                          <span class="add"  @click="v++">+</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -342,14 +440,11 @@
           <!-- 加载 -->
           <div class="load" id="load"> 
             <div>
-              <b>◀</b>
-              <span class="pitch">1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
-              <small>...</small>
-              <span>5</span>
-              <b>▶</b>
+              <b :class="{dis:pp==1}" @click="pp--">◀</b>
+              <span :class="{pitch:p==pp}" @click="pp=p" v-for="p in ps" :key="p">{{p}}</span>
+              <!-- <small v-show="">...</small>
+              <span :class="{pitch:ps==pp}" @click="pp=ps">{{ps}}</span> -->
+              <b :class="{dis:pp==ps}" @click="pp++">▶</b>
             </div>
           </div>
         </div>
@@ -361,7 +456,14 @@
 
 <script>
     export default {
-        
+        data() {
+          return {
+            love: false,
+            v: 0,
+            ps: 5,
+            pp: 1,
+          }
+        },
     }
 </script>
 
