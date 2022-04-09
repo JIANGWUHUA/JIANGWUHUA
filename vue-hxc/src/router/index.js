@@ -60,6 +60,12 @@ const routes = [
     component: () => import('../views/ProductDisplay.vue'),
   },
   {
+    path: '/product',
+    name: 'productDisplay',
+    redirect: '/product/display',
+    component: () => import('../views/ProductDisplay.vue'),
+  },
+  {
     //商品详情
     path: '/product/details',
     name: 'productDetails',

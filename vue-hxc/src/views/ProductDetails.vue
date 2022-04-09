@@ -2,6 +2,15 @@
     <div class="gjm">
       <div class="details-page">
       <div class="center">
+        <div class="breadcrumb">
+          <div>
+            <router-link to="/">首页</router-link>
+            <span>></span>
+            <router-link to="/product/display">分类</router-link>
+            <span>></span>
+            <span>详情</span>
+          </div>
+        </div>
         <product-basic />
         <div class="details-bottom">
           <div>      
