@@ -73,8 +73,6 @@
                 <span>></span>
                 <span>全部结果</span>
             </div>
-            <div class="gjm-product-filter">
-            </div>
         </div>
         <div class="display-item">
           <ul>
@@ -83,7 +81,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/01.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -119,7 +117,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/02.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -155,7 +153,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/03.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -191,7 +189,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/04.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -227,7 +225,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/05.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -263,7 +261,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/06.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -299,7 +297,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/07.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -335,7 +333,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/08.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -371,7 +369,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/09.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -407,7 +405,7 @@
                 <div class="card">
                   <div class="card-top">
                     <div class="card-img">
-                      <router-link to="/product/details"><img src="../assets/images/product/0020001.jpg" alt=""></router-link>
+                      <router-link to="/product/details"><img src="../assets/images/product/10.jpg" alt=""></router-link>
                     </div>
                     <div class="card-hide">
                       <div class="card-top-left">
@@ -442,14 +440,11 @@
           <!-- 加载 -->
           <div class="load" id="load"> 
             <div>
-              <b>◀</b>
-              <span class="pitch">1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
-              <small>...</small>
-              <span>5</span>
-              <b>▶</b>
+              <b :class="{dis:pp==1}" @click="pp--">◀</b>
+              <span :class="{pitch:p==pp}" @click="pp=p" v-for="p in ps" :key="p">{{p}}</span>
+              <!-- <small v-show="">...</small>
+              <span :class="{pitch:ps==pp}" @click="pp=ps">{{ps}}</span> -->
+              <b :class="{dis:pp==ps}" @click="pp++">▶</b>
             </div>
           </div>
         </div>
@@ -465,6 +460,8 @@
           return {
             love: false,
             v: 0,
+            ps: 5,
+            pp: 1,
           }
         },
     }

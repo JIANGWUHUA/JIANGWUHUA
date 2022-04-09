@@ -15,6 +15,11 @@ img{
     width: 100%;
 }
 ul{ list-style: none;}
+.dis{
+  pointer-events:none !important;
+  color: rgba(102, 102, 102, 0.5) !important;
+  border-color: rgba(102, 102, 102, 0.5) !important;
+}
 .display-page,.details-page{
     width: 100%;
     padding: 60px 0 20px;

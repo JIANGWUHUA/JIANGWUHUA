@@ -12,8 +12,8 @@
           </div>
           <div class="details-right">
             <div class="details-banner">
-               <a href="#"><div><img src="../assets/images/single-banner.jpg" alt=""><span>秒杀专区</span></div>
-               </a>
+               <router-link to="/product/display"><div><img src="../assets/images/single-banner.jpg" alt=""><span>秒杀专区</span></div>
+               </router-link>
             </div>
             <div class="details-card">
               <h2>密刺黄瓜500g+-50g</h2>
@@ -29,10 +29,7 @@
                 <div class="bj">
                    <div><span>规格:</span></div>
                   <div class="size">
-                    <span class="cur">500g+-50g</span>
-                    <span>500g+-50g</span>
-                    <span>500g+-50g</span>
-                    <span>500g+-50g500g+-50g500g+-50g</span>
+                    <span v-for="(s,i) in sizes" :key="s" :class="{cur:i==size}" @click="size=i">{{s}}</span>
                   </div>
                 </div>
                   </li>
@@ -82,6 +79,8 @@
             return {
                 v: 0,
                 love:false,
+                sizes: ['500g+-50g','500g+-50g','500g+-50g','500g+-50g500g+-50g500g+-50g'],
+                size: 0,
             }
         },
     }
