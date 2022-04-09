@@ -1,6 +1,7 @@
 <template>
   <div>
-    <sss />
+    
+    <sss/>
   </div>
 </template>
 
@@ -8,7 +9,7 @@
 import MyIndex from './components/MyIndex.vue'
 import Sss from './components/sss.vue'
   export default {
-  components: { MyIndex, Sss,},
+  components: { MyIndex, Sss,}
     
   }
 </script>

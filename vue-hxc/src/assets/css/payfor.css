@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(245,245,245);
+}
+
+.nav {
+    width: 1250px;
+    height: 23px;
+    padding: 20px;
+
+    background-color: rgb(255, 255, 255);
+    margin: 30px auto;
+    border-top: 3px solid green;
+    margin-top: 0;
+}
+
+.nav p {
+    text-align: center;
+    font-size: 18px;
+}
+.nav p a{
+ color: rgb(13, 110, 235); 
+ text-decoration: none;  
+}
+
+.two_list {
+    margin: auto;
+    width: 1300px;
+    height: 1093px;
+    background-color: rgb(255, 255, 255)
+}
+
+.fist_center {
+    padding: 20px 20px 30px 20px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.tou {
+
+    height: 30px;
+    border-bottom: 2px solid green;
+}
+
+.tou_2 {
+    width: 70px;
+    height: 2px;
+    background: green;
+    margin-top: 0;
+}
+/* ****************************************** */
+.product {
+    width: 1260px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.table_list {
+    margin: auto;
+    height: 688px;
+    width: 1200px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.table_list img {
+    width: 100px;
+    height: 100px;
+}
+
+.two_list th {
+    padding: 11px 43px;
+    color: white;
+}
+
+table thead {
+    background-color: rgb(17,151,68);
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.table_list th:first-child {
+    border-radius: 6px 0px 0px 6px;
+}
+
+.table_list th:last-child {
+    border-right: none;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.table_list tr .del {
+    width: 30px;
+    height: 30px;
+}
+.list_one >th,tr,td{
+    border: 1px solid rgb(232,232,232);
+    }
+/* *************************************** */
+.pay_for {
+    width: 500px;
+    height: 290px;
+    margin: 10px auto;
+    background-color:rgb(255, 255, 255);
+}
+
+.pay_list {
+    width: 500px;
+    height: 290px;
+    padding: 15px 20px;
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom:2px solid green ;
+}
+.pay_list h2 {
+    color: green;
+    border-bottom:1px solid green ;  
+}
+/* *************************************** */
+/* 收货时间 */
+.time {
+    width: 1300px;
+    height: 920px;
+    background-color: rgb(255,255,255);
+    margin:30px auto;
+}
+
+/* 同意条款 */
+.agree {
+    margin-top: 25px;
+    padding: 10px 15px;
+}
+.kuang_num>div{
+    display: flex;
+    justify-content: space-around;
+}
+.agree a {
+    color: green;
+    text-decoration: none;
+}
+
+.agree,
+a {
+    font-size: 18px;
+}
+
+.btn_pf {
+    display: block;
+    width: 60%;
+    height: 50px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    border-radius: 9px;
+    border: 0;
+    margin:28px auto 28px;
+}
+/* 
+js
+*/
