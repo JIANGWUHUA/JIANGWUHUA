@@ -1,27 +1,27 @@
 <template>
-  <div class="my-index">
-        <!-- 第一板块 -->
-<div class="nav_huo1">
-    <div class="banxin">  
-        <div class="huo_1dropdown">
-            <h3 class="huo_1btn">西安</h3>
-            <div class="dropdown_content">
-                <a href="#" class="dropdown_content_a">雁塔区</a>
-                <a href="#" class="dropdown_content_a">碑林区</a>
-                <a href="#" class="dropdown_content_a">长安区</a>
-                <a href="#" class="dropdown_content_a">未央区</a>
-                <a href="#" class="dropdown_content_a">高新区</a>
-                <a href="#" class="dropdown_content_a">西咸新区</a>
-            </div>
-        </div> 
+<div class="my-index">
+    <!-- 第一板块 -->
+    <div class="nav_huo1">
+        <div class="banxin">  
+           <div class="huo_1dropdown">
+                <h3 class="huo_1btn">西安</h3>
+                <div class="dropdown_content">
+                    <a href="#" class="dropdown_content_a">雁塔区</a>
+                    <a href="#" class="dropdown_content_a">碑林区</a>
+                    <a href="#" class="dropdown_content_a">长安区</a>
+                    <a href="#" class="dropdown_content_a">未央区</a>
+                    <a href="#" class="dropdown_content_a">高新区</a>
+                    <a href="#" class="dropdown_content_a">西咸新区</a>
+                </div>
+            </div> 
         
         <ul>
             <li><a href="#">登录</a></li>
             <li><a href="#">注册</a></li>
             <li><a href="#">联系客服</a></li>
             <li><a href="#">关于我们</a></li>
-        </ul>
-    </div>
+         </ul>
+    </div> 
 </div>
     <!-- 第二板块 -->
 <div class="nav_huo2">
@@ -78,16 +78,9 @@
         <img src="../assets/images/home/category/03.jpg" alt="">
     <!-- 切换按钮 -->
         <div class="indicator">
-            <span data-i="0" class="active"></span>
-            <span data-i="1"></span>
-            <span data-i="2"></span>
-        </div>
-        <div class="btns">
-            <span></span>
-            <span></span>
-        </div>
-        <div class="btns_jiantou">
-
+            <span class="active"></span>
+            <span ></span>
+            <span ></span>
         </div>
     </div>
 </div>
@@ -142,7 +135,6 @@
             </ul>
         </div>
     </div>
-   
 </div>
     <!-- 第五板块 -->
 <div class="new_Arrival">
@@ -220,10 +212,9 @@
                 </li>
             </ul>
             <a href="#">
-                <div class="show_more">
-                        更多展示
-                </div></a>
-           
+            <div class="show_more">
+                    更多展示
+            </div></a>
         </div>
     </div>
 </div> 
@@ -238,7 +229,6 @@
         <input type="text" placeholder="Enter Your Email Address">
         <button>@SUBSCRIBE</button>
     </div>
-   
 </div> 
     <!-- 第七板块 -->
 <div class="huo_7">
@@ -304,54 +294,23 @@
                 <img src="../assets/images/google-store.png" alt="">
             </div>
         </div>
-        
-        
-        <!-- 
-            <li>
-                
-            </li>
-        </ul> -->
     </div> 
 </div>
 
 <div class="huo_8last">
     <div class="banxin">
-        <!-- <div class="last_fuwu">
-            <ul>
-                <li>
-                    <img src="./icon/营养服务.png" alt="">
-                    <span>营养服务</span>
-                </li>
-                <li>
-                    <img src="./icon/专业配送.png" alt="">
-                    <span>专业配送</span>
-                </li>
-                <li>
-                    <img src="./icon/品质保证.png" alt="">
-                    <span>品质保证</span>
-                </li>
-                <li>
-                    <img src="./icon/买贵补差.png" alt="">
-                    <span>买贵补差</span>
-                </li>
-                <li>
-                    <img src="./icon/增值服务.png" alt="">
-                    <span>增值服务</span>
-                </li>
-            </ul>
-        </div> -->
         <div class="huo_8last_1">
             <p>© All Copyrights Reserved by wangcaijulebu">Mironcoder</p>         
             <div class="huo_8last_2">
-            <a href="#"><img src="../assets/images/payment/jpg/01.jpg" alt="" ></a>
-            <a href="#"><img src="../assets/images/payment/jpg/02.jpg" alt="" ></a>
-            <a href="#"><img src="../assets/images/payment/jpg/03.jpg" alt="" ></a>
-            <a href="#"><img src="../assets/images/payment/jpg/04.jpg" alt="" ></a>
+                <a href="#"><img src="../assets/images/payment/jpg/01.jpg" alt="" ></a>
+                <a href="#"><img src="../assets/images/payment/jpg/02.jpg" alt="" ></a>
+                <a href="#"><img src="../assets/images/payment/jpg/03.jpg" alt="" ></a>
+                <a href="#"><img src="../assets/images/payment/jpg/04.jpg" alt="" ></a>
             </div>         
         </div>
     </div>
 </div>
-  </div>
+</div>
 </template>
 
 <script>
@@ -361,5 +320,8 @@
 </script>
 
 <style lang="scss" scoped>
+
+</style>
+<style scoped src="../assets/css/index.css">
 
 </style>
