@@ -6,6 +6,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/index',
+    name: 'index',
+    component: () => import('../views/Index.vue'),
+  },
+  {
     //个人信息
     path: '/profile',
     name: 'profile',
