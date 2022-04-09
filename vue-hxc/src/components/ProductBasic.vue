@@ -1,13 +1,9 @@
 <template>
         <div class="top">
           <div class="details-left">
-            <div class="details-l-img"><img src="../assets/images/product/01.jpg" alt=""></div>
+            <div class="details-l-img"><img :src="imgl" alt=""></div>
             <div class="details-s-img">
-              <img src="../assets/images/product/01.jpg" alt=""  class="toggle">
-              <img src="../assets/images/product/02.jpg" alt="" >
-              <img src="../assets/images/product/03.jpg" alt="" >
-              <img src="../assets/images/product/04.jpg" alt="" >
-              <img src="../assets/images/product/05.jpg" alt="" >
+              <img v-for="img in imgs" :key="img" :src="img" alt="" :class="{toggle:img==imgl}" @mouseover="imgl=img">
             </div>
           </div>
           <div class="details-right">
@@ -29,7 +25,7 @@
                 <div class="bj">
                    <div><span>规格:</span></div>
                   <div class="size">
-                    <span v-for="(s,i) in sizes" :key="s" :class="{cur:i==size}" @click="size=i">{{s}}</span>
+                    <span v-for="(s,i) in sizes" :key="i" :class="{cur:i==size}" @click="size=i">{{s}}</span>
                   </div>
                 </div>
                   </li>
@@ -65,7 +61,7 @@
                   <button @click="love=!love"><span class="g" :class="{love:love==true}">❤</span><span v-show="love==false">收藏</span><span v-show="love==true">已收藏</span></button>
                 </div>
                 <div class="btn2">
-                  <a href="#"><button>立即购买</button></a>
+                  <router-link to="/payfor"><button>去结账</button></router-link>
                 </div>
               </div>
             </div>
@@ -81,6 +77,13 @@
                 love:false,
                 sizes: ['500g+-50g','500g+-50g','500g+-50g','500g+-50g500g+-50g500g+-50g'],
                 size: 0,
+                imgs: [
+                  'https://img12.360buyimg.com/n1/jfs/t1/35827/5/743/124060/5caca16aEb6993257/bc0b04546047fdfa.jpg',
+                  "https://img12.360buyimg.com/n1/jfs/t1/23312/8/5378/154787/5c3d563aEcaa7d90e/3f6783b52360480d.jpg",
+                  'https://img12.360buyimg.com/n1/jfs/t1/32289/26/512/237943/5c3d563aE6891b4f0/4cfcec4e68124df8.jpg',
+                  'https://img12.360buyimg.com/n1/jfs/t1/7176/3/13193/184390/5c3d563bE89b58b7c/2e15f3e7128eefd5.jpg',
+                  'https://img12.360buyimg.com/n1/jfs/t1/28154/40/5343/193764/5c3d563bEe79d7eba/f750c1755b791a52.jpg'],
+                imgl: 'https://img12.360buyimg.com/n1/jfs/t1/35827/5/743/124060/5caca16aEb6993257/bc0b04546047fdfa.jpg',
             }
         },
     }

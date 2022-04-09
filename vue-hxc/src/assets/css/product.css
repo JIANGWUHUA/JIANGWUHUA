@@ -253,8 +253,13 @@ font-size: 20px;
 
 /* details-page */
 
-.details-left,.details-right{
-  width: 49%;
+.details-left{
+  width: 45%;
+  margin-right: 8px;
+  position: relative;
+}
+.details-right{
+  width: 55%;
   position: relative;
 }
 .details-left div{
@@ -380,10 +385,10 @@ font-size: 20px;
 }
 .details-btn{
   text-align: center;
-  padding: 0 0 20px;
+  padding: 0 0 15px;
 }
 .details-btn button{
-  margin: 15px 0;
+  margin-bottom: 20px;
   padding: 13px 5px;
   font-size: 15px;
   cursor: pointer;
@@ -414,6 +419,7 @@ font-size: 20px;
 }
 .btn1 div{
   width: 60%;
+  height: 100%;
   margin-right: 10px;
   display: flex;
   justify-content: space-evenly;
